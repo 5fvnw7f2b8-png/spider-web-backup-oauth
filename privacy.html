@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | SPIDER WEB Backup</title>
+<style>:root{color-scheme:dark}body{margin:0;background:#101722;color:#edf3fc;font:16px/1.75 system-ui,-apple-system,sans-serif}main{max-width:790px;margin:6vh auto;padding:0 24px}p,li{color:#c4d0de}a{color:#92e3d3}h1,h2{line-height:1.35}h2{font-size:1.16rem;margin-top:32px}footer{border-top:1px solid #344458;margin-top:40px;padding:20px 0}</style>
+</head><body><main><p><a href="./">← SPIDER WEB Backup home</a></p>
+<h1>Privacy Policy／隱私權政策</h1><p>Effective: November 8, 2026</p>
+<p>SPIDER WEB Backup is a personal-use Google Drive encrypted backup integration under development for a read-only market observer. This policy describes its intended data handling. It is not offered as a public account-based service. Live Google Drive transfer and independent restoration have not yet been validated.</p>
+<h2>What Google data is accessed</h2>
+<p>The application requests <code>https://www.googleapis.com/auth/drive.file</code> to create, access and manage application-authorized backup files in the owner's Google Drive. Before an authorized backup, it is designed to query Google Drive account identity and quota information (including an account permission identifier, quota limit and used storage). It does not seek permission to browse unrelated Drive files, Gmail, contacts or calendars.</p>
+<h2>How the data is used</h2>
+<p>Account and quota data are used to confirm the intended storage account and prevent unsafe transfers. The SQLite snapshot is intended to be encrypted locally with restic before storage in Google Drive through rclone. The public pages are informational only: they have no OAuth sign-in form, no embedded analytics, and no code for collecting Google tokens or file contents.</p>
+<h2>Where data is held and who can access it</h2>
+<p>Private OAuth configuration and restic encryption passwords are intended to remain on devices or systems controlled by the owner, never in this public repository or website. Encrypted backup objects, if the owner separately authorizes production transfer, are stored in the owner's chosen Google Drive account. Website hosting by GitHub and cloud storage by Google are subject to their own infrastructure logging and service policies.</p>
+<h2>Sharing and advertising</h2>
+<p>SPIDER WEB Backup does not sell Google user data or use it for advertising, targeting or AI model training. Access to backup ciphertext is limited to the owner-authorized storage service and the service provider processing necessary to store or retrieve it. This website contains no third-party analytics trackers.</p>
+<h2>Retention, deletion and revocation</h2>
+<p>Google access can be revoked from the owner's Google Account settings. Revoking access prevents subsequent authorized operations but does not itself delete previously uploaded backups. The owner may separately manage or delete backup files in their Drive account. This integration is designed to avoid unattended deletion, prune or overwrite of backups. Restoration and data retention must be verified by the owner before any destructive action.</p>
+<h2>Changes and questions</h2>
+<p>Any future change to the application's actual data handling should be reflected in this policy. Questions can be raised through the <a href="https://github.com/5fvnw7f2b8-png/spider-web-backup-oauth/issues">public GitHub issue tracker</a>; do not post private information, tokens, passwords, account identifiers or backup contents.</p>
+<h2 lang="zh-Hant">中文摘要</h2><p lang="zh-Hant">本工具僅為個人加密備份用途，規劃使用 Google Drive <code>drive.file</code> 權限操作應用程式可存取的備份檔案，並查核 Google 帳戶識別資訊與容量。SQLite 資料會先在使用者控制的環境以 restic 加密。本公開網站不收集 Token、密碼或備份內容，也不出售資料、用於廣告或 AI 訓練。授權可於 Google 帳戶撤銷；撤銷授權不會自動刪除已存在的備份。正式異地備份及外部還原仍待驗收。</p>
+<footer><a href="./">Home／首頁</a> · <a href="./terms.html">Terms／使用條款</a></footer></main></body></html>
